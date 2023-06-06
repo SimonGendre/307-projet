@@ -9,8 +9,11 @@ Technologies Utilisées
 Frontend: HTML, CSS, JavaScript.
 Stockage des Données: Les données sont stockées sur https://json.extendsclass.com.
 API de Géolocalisation: Utilisation des API suivantes :
+
 getjsonip: API pour obtenir l'IP du client connecté
+
 ip-api: API pour obtenir les informations de géolocalisation d'une adresse IP
+
 Exécution
 Le site web ne nécessite pas de configuration spécifique ni de backend. Vous pouvez simplement y acceder dans un navigateur web. https://307.gendres.emf-informatique.ch
 
