@@ -1,0 +1,38 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #5d5d5d;
+    color: #9cdcfe;
+    margin: 1cm;
+    text-align: left;
+}
+
+a {
+    color: #94cea8;
+}
+
+table {
+    text-align: center;
+    margin: 1cm;
+}
+td {
+    margin: 0.5cm;
+}
+
+#logo {
+    height: 1.5cm;
+    margin: auto;
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+#update {
+    margin: auto;
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+button {
+    border-radius: 5px;
+    border-color: #d7ba66;
+    background-color: #ce8455;
+}

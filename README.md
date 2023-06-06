@@ -12,7 +12,7 @@ API de Géolocalisation: Utilisation des API suivantes :
 getjsonip: API pour obtenir l'IP du client connecté
 ip-api: API pour obtenir les informations de géolocalisation d'une adresse IP
 Exécution
-Le site web ne nécessite pas de configuration spécifique ni de backend. Vous pouvez simplement y acceder dans un navigateur web. 307.gendres.emf-informatique.ch
+Le site web ne nécessite pas de configuration spécifique ni de backend. Vous pouvez simplement y acceder dans un navigateur web. https://307.gendres.emf-informatique.ch
 
 Remarques
 Ce site web est développé à des fins éducatives et ne garantit pas l'exactitude à 100% des informations de géolocalisation des adresses IP. Veuillez utiliser les résultats avec précaution.
