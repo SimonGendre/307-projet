@@ -1,0 +1,23 @@
+https://jsonip.com/
+https://ip-api.com/docs/api:json
+https://api.le-systeme-solaire.net/rest/bodies/saturne
+
+doc :
+https://getjsonip.com/#docs
+https://ip-api.com/docs/api:json
+https://api.le-systeme-solaire.net/en/
+
+
+
+store json :
+
+write : 
+POST
+param : 
+api_key:WfG3urZ02tnoO2so3f3nBdMULWRNlYTpO9zC7b1m
+url:
+https://json.extendsclass.com/bin/2b01ad33529d
+
+read: 
+GET
+https://json.extendsclass.com/bin/2b01ad33529d
