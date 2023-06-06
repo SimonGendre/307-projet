@@ -5,6 +5,7 @@ pas ecrasé
 afficher les donnees sur la page
 tester map + marqueur (Ex 21)
 faire index + CSS
+replace ":" par "." pour les IPv6 (ça casse le JSON)
 
 done :
 
