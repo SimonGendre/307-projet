@@ -1,0 +1,12 @@
+todo :
+update json
+ajouter les données au fur et a mesure. 
+pas ecrasé
+afficher les donnees sur la page
+
+done :
+
+get IP
+get localisation
+store json
+get json
