@@ -45,7 +45,7 @@ class MapCtrl {
                 //recupert lon et lat
                 let lon = coordonnees[k].split(",")[0].split(":")[1];
                 let lat = coordonnees[k].split(",")[1].split(":")[1];
-                let ip = coordonnees[k].split(",")[2].split(":")[1];
+                let ip = k;
 
                 if ((lon != undefined) && (lat != undefined) && (lon != "undefined") && (lat != "undefined")) {
                     console.log(lon + " " + lat);

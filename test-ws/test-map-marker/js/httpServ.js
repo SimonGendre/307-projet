@@ -46,13 +46,13 @@ class HttpServ {
       date.getDate() +
       date.getHours() +
       date.getMinutes();
-      let ipFormat = ip.replace(":", ".");
-    let value = "lon:" + lon + ", lat:" + lat + ", ip:" + ipFormat;
+      let ipFormat = ip.replaceAll(":", ".");
+    let value = "lon:" + lon + ", lat:" + lat;
 
 
     //ajout de la ligne
     let data = this.getStoredData();
-    data[header] = value;
+    data[ip] = value;
 
 
     //ecriture en ligne
