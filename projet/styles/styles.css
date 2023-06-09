@@ -36,3 +36,17 @@ button {
     border-color: #d7ba66;
     background-color: #ce8455;
 }
+
+#container {
+    background-color: white;
+    width: 90%;
+    padding: 1em;
+    border: 1px solid black;
+    margin: auto;
+    font-family: Verdana, Arial, serif;
+    display: flex;
+    flex-direction: column;
+  }
+  #carte {
+    height: 80vh;
+  }

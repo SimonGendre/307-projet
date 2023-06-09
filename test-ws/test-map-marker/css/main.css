@@ -14,7 +14,9 @@ body {
   border: 1px solid black;
   margin: auto;
   font-family: Verdana, Arial, serif;
+  display: flex;
+  flex-direction: column;
 }
 #map {
-  height: 400px;
+  height: 80vh;
 }

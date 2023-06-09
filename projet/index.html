@@ -12,25 +12,30 @@
   <link rel="icon" href="./multimedia/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/styles.css" />
+   <!--import pour la carte-->
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
   <!--Scripts-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="js/indexCtrl.js" async></script>
   <script type="text/javascript" src="js/vueCtrl.js" async></script>
+  <script type="text/javascript" src="js/map.js" ></script>
 </head>
 
 <body>
   <div id="menu">
     <table>
       <tr>
-        <td ><a id="accueil">Acceuil</a></td>
+        <td ><a id="accueil" href="#">Acceuil</a></td>
         <td class="separateur">|</td>
-        <td id="map">Map</td>
+        <td ><a id="map" href="#">Map</a></td>
         <td id="logo"><img src="./multimedia/logo.png"></td>
       </tr>
     </table>
     <h1>IP Locator</h1>
   </div>
-  <div id="views">
+  <div id="view">
 
   </div>
 

@@ -8,6 +8,7 @@
 $().ready(function () {
     ctrl = new Ctrl();
     vue = new VueCtrl();
+    mapCtrl = new MapCtrl();
 });
 
 class Ctrl {
