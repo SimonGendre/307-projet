@@ -5,7 +5,7 @@ class MapCtrl {
     }
     afficherCarte(mapElement) {
         // Utilisez l'élément "map" pour afficher la carte Leaflet ou effectuer d'autres opérations
-        this.mymap = L.map(mapElement[0]).setView([51.505, -0.09], 13);
+        this.mymap = L.map(mapElement[0]).setView([46.802, 7.146], 13);
 
         // Ajouter une couche de tuiles (carte de base)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
