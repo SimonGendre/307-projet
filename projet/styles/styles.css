@@ -1,18 +1,15 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #5d5d5d;
-  color: #9cdcfe;
+  background-color: #9cdcfe;
+  color: #5d5d5d;
   margin: 1cm;
   text-align: left;
 }
 
 a {
-  color: #94cea8;
+  color: #2e9a24;
 }
 
-table {
-  text-align: center;
-}
 td {
   margin: 0.5cm;
   width: auto;
@@ -37,12 +34,15 @@ button {
 }
 
 #menu {
+  border: solid 2px #5d5d5d;
+  border-radius: 90px;
   font-size: 15pt;
   height: 5%;
-  max-height: 7%;
+  margin-bottom: 1em;
+  
 }
 #logo {
-  max-height: 5em;
+  max-height: 4em;
   margin: auto;
   object-fit: scale-down;
   clear: none;
@@ -51,7 +51,9 @@ button {
 td:has(img#logo) {
   width: 100%;
 }
-
+#siteName {
+  width: 8%;
+}
 #texte {
   margin: 5%;
   max-width: 100%;
@@ -80,4 +82,11 @@ td:has(img#logo) {
 }
 .ombre {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hidden {
+    display: none;
+}
+.jqLeft {
+    width: 5%;
+    border: solid 2px #9cdcfe;
 }

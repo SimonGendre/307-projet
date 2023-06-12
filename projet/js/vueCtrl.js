@@ -1,12 +1,24 @@
 /*
    But :    gere les parties HTML et CSS
    Auteur : Simon Gendre
-   Date :   09.06.2023 / V1.0 
+   Date :   12.06.2023 / V1.0 
 */
 
 class VueCtrl {
   constructor() {
     //definit tout les listener
+    
+    //permet de toggle le menu
+    $("#siteName, #logo").click(function(){ 
+      $(".menuItem")
+      .slideToggle("slow")
+      .toggleClass("hidden");
+      $("#siteName").toggle(); 
+      
+      $("#menu").toggleClass('jqLeft');
+      return false; 
+    });
+
 
     //menu
     $("#accueil").click(() => this.chargerVue("accueil"));
