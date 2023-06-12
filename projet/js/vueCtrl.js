@@ -17,21 +17,27 @@ class VueCtrl {
     this.mapElement = null;
     //chargement de la page principale
     this.chargerVue("accueil");
-
-
   }
 
   chargerVue(vue) {
-
     // charger la vue demandee
     $("#view").load("views/" + vue + ".html", function () {
-
       // Vérifiez si l'élément "map" existe dans la vue chargée et que "vue" est égal à "map"
       if (vue == "map") {
         this.mapElement = $("#carte");
         if (this.mapElement.length > 0) {
           // Appeler la méthode d'une autre classe avec l'élément "map" en tant que paramètre
           mapCtrl.afficherCarte(this.mapElement);
+          //affiche toutes les IP précedentes
+          mapCtrl.displayAll(httpServ.getStoredData());
+          //affichage du marqueur actuel
+          mapCtrl.addMarker(ctrl.lon, ctrl.lat, "Vous : " + ctrl.ip, "red");
+          //affichage des valeurs
+
+          $("#lon").val(ctrl.lon);
+          $("#lat").val(ctrl.lat);
+          $("#ip").val(ctrl.ip);
+         
         }
       }
     });

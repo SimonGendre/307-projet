@@ -1,11 +1,7 @@
 todo :
-update json
-ajouter les données au fur et a mesure. 
-pas ecrasé
-afficher les donnees sur la page
-tester map + marqueur (Ex 21)
+
 faire index + CSS
-replace ":" par "." pour les IPv6 (ça casse le JSON)
+
 
 done :
 
@@ -13,14 +9,11 @@ get IP
 get localisation
 store json
 get json
-
-
-fonctionnement :
-
-page load
-get IP
-get IP location
-display Ip 
+replace ":" par "." pour les IPv6 (ça casse le JSON)
 update json
-getJson
-display json
+ajouter les données au fur et a mesure. 
+pas ecrasé
+afficher les donnees sur la page
+tester map + marqueur (Ex 21)
+
+

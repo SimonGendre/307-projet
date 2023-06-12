@@ -1,45 +1,52 @@
-<!--page de Redirection vers les differents exercices du module 307
-#author : Gendres06
-#date : 05.05.2023
-#V1.0-->
+<!--page d'acceuil du projet 307
+#author : Simon Gendre
+#date : 12.06.2023
+#V1.2-->
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>IP Locator - Projet 307</title>
+    <link rel="icon" href="./multimedia/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/styles.css"
+    />
+    <!--import de JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--import pour la carte-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>IP Locator - Projet 307</title>
-  <link rel="icon" href="./multimedia/logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./styles/styles.css" />
-   <!--import pour la carte-->
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!--Scripts-->
+    <script type="text/javascript" src="js/vueCtrl.js"></script>
+    <script type="text/javascript" src="js/ipGetter.js"></script>
+    <script type="text/javascript" src="js/remoteData.js"></script>
+    <script type="text/javascript" src="js/httpServ.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/indexCtrl.js"></script>
+  </head>
 
-  <!--Scripts-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="js/indexCtrl.js" async></script>
-  <script type="text/javascript" src="js/vueCtrl.js" async></script>
-  <script type="text/javascript" src="js/map.js" ></script>
-</head>
-
-<body>
-  <div id="menu">
-    <table>
-      <tr>
-        <td ><a id="accueil" href="#">Acceuil</a></td>
-        <td class="separateur">|</td>
-        <td ><a id="map" href="#">Map</a></td>
-        <td id="logo"><img src="./multimedia/logo.png"></td>
-      </tr>
-    </table>
-    <h1>IP Locator</h1>
-  </div>
-  <div id="view">
-
-  </div>
-
-  <p id="update">Last update : 06.06.2023</p>
-</body>
-
+  <body>
+    <div id="menu">
+      <table>
+        <tr>
+          <td id="siteName">IP Locator</td>
+          <td class="separateur">|</td>
+          <td><a id="accueil" href="#">Accueil</a></td>
+          <td class="separateur">|</td>
+          <td><a id="map" href="#">Map</a></td>
+          <td><img id="logo" src="./multimedia/logo.png" /></td>
+        </tr>
+      </table>
+    </div>
+    <div id="view"></div>
+  </body>
 </html>

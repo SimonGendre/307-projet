@@ -16,6 +16,7 @@ ip-api: API pour obtenir les informations de géolocalisation d'une adresse IP
 
 Exécution
 Le site web ne nécessite pas de configuration spécifique ni de backend. Vous pouvez simplement y acceder dans un navigateur web. https://307.gendres.emf-informatique.ch
+ATTENTION : certaines fonctionnalitées ne fonctionnent pas en https (il faudrait payer un abonnement pour pouvoir utiliser http://ip-api.com/ en https et éviter l'erreur "Mixed content")
 
 Remarques
 Ce site web est développé à des fins éducatives et ne garantit pas l'exactitude à 100% des informations de géolocalisation des adresses IP. Veuillez utiliser les résultats avec précaution.

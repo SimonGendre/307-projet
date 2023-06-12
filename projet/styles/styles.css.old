@@ -12,15 +12,29 @@ a {
 
 table {
   text-align: center;
+  margin: 1cm;
 }
 td {
   margin: 0.5cm;
-  width: auto;
 }
 
+#logo {
+  max-height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 100%;
+}
+#update {
+  margin: auto;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
 button {
   border-radius: 5px;
-  border-color: #d7ba66 solid 2px;
+  border-color: #d7ba66;
   background-color: #ce8455;
 }
 
@@ -38,25 +52,11 @@ button {
 
 #menu {
   font-size: 15pt;
-  height: 5%;
-  max-height: 7%;
+  height: 10%;
 }
-#logo {
-  max-height: 5em;
-  margin: auto;
-  object-fit: scale-down;
-  clear: none;
-  float: right;
-}
-td:has(img#logo) {
-  width: 100%;
-}
-
 #texte {
-  margin: 5%;
-  max-width: 100%;
-  min-width: 10%;
-
+  margin: auto;
+  width: 50%;
   margin-top: 10%;
   text-align: justify;
 }
@@ -75,7 +75,7 @@ td:has(img#logo) {
   margin: auto;
   position: absolute;
   font-size: 10pt;
-  bottom: 50px;
+  bottom: 5px;
   left: 50px;
 }
 .ombre {
