@@ -15,7 +15,7 @@ API de Géolocalisation: Utilisation des API suivantes :
 *ip-api*: [API pour obtenir les informations de géolocalisation d'une adresse IP](https://ip-api.com/docs/api:json)
 
 ## Exécution
-Le site web ne nécessite pas de configuration spécifique. Vous pouvez simplement y acceder dans un navigateur web. http://307.gendres.emf-informatique.ch
+Le site web ne nécessite pas de configuration spécifique. Vous pouvez simplement y acceder dans un [navigateur web](http://307.gendres.emf-informatique.ch).
 **ATTENTION** : certaines fonctionnalitées ne fonctionnent pas en *https* (il faudrait payer un abonnement pour pouvoir utiliser http://ip-api.com/ en https et éviter l'erreur "Mixed content" qui bloque la requête)
 
 ## Remarques
