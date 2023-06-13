@@ -1,0 +1,82 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #5d5d5d;
+  color: #9cdcfe;
+  margin: 1cm;
+  text-align: left;
+}
+
+a {
+  color: #94cea8;
+}
+
+td {
+  margin: 0.5cm;
+  width: auto;
+}
+
+button {
+  border-radius: 5px;
+  border-color: #d7ba66 solid 2px;
+  background-color: #ce8455;
+}
+
+#container {
+  background-color: white;
+  color: black;
+  width: 85%;
+  padding: 1em;
+  border: 1px solid black;
+  margin: auto;
+  font-family: Verdana, Arial, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#menu {
+  font-size: 15pt;
+  height: 5%;
+  max-height: 7%;
+}
+#logo {
+  max-height: 5em;
+  margin: auto;
+  object-fit: scale-down;
+  clear: none;
+  float: right;
+}
+td:has(img#logo) {
+  width: 100%;
+}
+#siteName{
+    width: 7%;
+}
+#texte {
+  margin: 5%;
+  max-width: 100%;
+  min-width: 10%;
+
+  margin-top: 10%;
+  text-align: justify;
+}
+#carte {
+  height: 60vh;
+}
+.separateur {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.important {
+  color: red;
+  margin-top: 2em;
+}
+.bottomLeft {
+  margin: auto;
+  position: absolute;
+  font-size: 10pt;
+  bottom: 50px;
+  left: 50px;
+}
+.ombre {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

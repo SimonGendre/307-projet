@@ -1,0 +1,27 @@
+<!--page d'acceuil du projet 307
+#author : Simon Gendre
+#date : 12.06.2023
+#V1.2-->
+<!DOCTYPE html>
+
+<div>
+  <div id="texte">
+    <h1>Bienvenue sur IP Locator</h1>
+    <p>
+      Bienvenue sur mon site web de suivi d'adresses IP! Ce site web vous permet
+      de visualiser l'emplacement géographique de toutes les adresses IP qui s'y
+      sont connectées.
+    </p>
+
+    <div class="bottomLeft">
+      <h3 class="important">
+        Disclaimer : ce site ne fonctionne pas bien en HTTPS
+      </h3>
+      <p>
+        Si le site n'affiche pas <b>"Vous : votre_ip"</b> lorsque vous allez sur
+        la carte. Veuillez changer <b>"HTTPS"</b> en <b>"HTTP"</b> dans la barre
+        de recherche.
+      </p>
+    </div>
+  </div>
+</div>
