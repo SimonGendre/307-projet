@@ -32,6 +32,12 @@ class Ctrl {
     this.lat = coordonnees.split(",")[0];
     this.lon = coordonnees.split(",")[1];
     httpServ.addData(this.lon, this.lat, this.ip);
-
+  }
+  rechercheIP(ip) {
+    let coordonnees = httpServ.getLocalisation(ip);
+    let lat = coordonnees.split(",")[0];
+    let lon = coordonnees.split(",")[1];
+    vue.afficheIP(ip, lon, lat);
+    httpServ.addData(lon, lat, ip);
   }
 }

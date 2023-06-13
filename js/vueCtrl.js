@@ -10,7 +10,7 @@ class VueCtrl {
     $("#siteName, #logo").click(function () {
       $("#menu").toggleClass("jqLeft", 500);
       $(".menuItem").toggleClass("hidden");
-      
+
       $("#view").toggleClass("fullScreen", 500);
       return false;
     });
@@ -20,6 +20,8 @@ class VueCtrl {
     $("#map").click(() => {
       this.chargerVue("map");
     });
+
+
     // Variable membre pour stocker la référence à l'élément "map"
     this.mapElement = null;
     //chargement de la page principale
@@ -31,6 +33,12 @@ class VueCtrl {
     $("#view").load("views/" + vue + ".html", function () {
       // Vérifiez si l'élément "map" existe dans la vue chargée et que "vue" est égal à "map"
       if (vue == "map") {
+        //listener pour le champ IP
+        $("#ip").keypress(function(e) {
+          if(e.which == 13) {
+            ctrl.rechercheIP($("#ip").val());
+          }
+      });
         this.mapElement = $("#carte");
         if (this.mapElement.length > 0) {
           // Appeler la méthode d'une autre classe avec l'élément "map" en tant que paramètre
@@ -47,5 +55,12 @@ class VueCtrl {
         }
       }
     });
+  }
+  afficheIP(ip, lon, lat) {
+    $("#lon").val(lon);
+    $("#lat").val(lat);
+    $("#ip").val(ip);
+    mapCtrl.addMarker(lon, lat, ip, "blue");
+    
   }
 }
