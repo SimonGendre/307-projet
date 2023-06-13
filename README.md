@@ -11,7 +11,7 @@ Stockage des Données: Les données sont stockées sur https://extendsclass.com/
 ### API de Géolocalisation
 Utilisation des API suivantes :
 
-* *getjsonip*: [API pour obtenir l'IP du client connecté ](https://jsonip.com/)
+* *getjsonip*: [API pour obtenir l'IP du client connecté ](https://getjsonip.com/#docs)
 * *ip-api*: [API pour obtenir les informations de géolocalisation d'une adresse IP](https://ip-api.com/docs/api:json)
 
 ## Exécution

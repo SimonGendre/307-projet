@@ -7,7 +7,7 @@ class ipGetter {
    * cette méthode récupert l'Ip du client
    */
   getIP(successCallback) {
-    let url = "https://jsonip.com/";
+    let url = "https://ipv4.jsonip.com/";
 
     // envoi de la requête
     $.ajax(url, {
