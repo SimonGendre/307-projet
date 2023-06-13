@@ -1,3 +1,7 @@
+/**
+ * cette classe permet de gerer les appels d'API
+ * 13.06.23
+ */
 class HttpServ {
   constructor() { }
   /**
@@ -40,20 +44,13 @@ class HttpServ {
   addData(lon, lat, ip) {
     //creation de la ligne à ajouté
     let date = new Date();
-    let header =
-      date.getMonth() +
-      "" +
-      date.getDate() +
-      date.getHours() +
-      date.getMinutes();
+    //enleve les : de l'ipv6 
     let ipFormat = ip.replaceAll(":", ".");
     let value = "lon:" + lon + ", lat:" + lat;
-
 
     //ajout de la ligne
     let data = this.getStoredData();
     data[ipFormat] = value;
-
 
     //ecriture en ligne
     rmtData.setJson(JSON.stringify(data), () => { });

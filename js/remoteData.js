@@ -1,3 +1,7 @@
+/**
+ * cette classe gere le stockage en ligne
+ * 13.06.23
+ */
 class remoteData {
   constructor() {}
 

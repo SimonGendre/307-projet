@@ -1,5 +1,9 @@
+/**
+ * cette classe gere la carte 
+ * 13.06.23
+ */
 class MapCtrl {
-  mymap = "";
+  mymap = null;
   constructor() {}
   /**
    * cette méthode affiche la carte

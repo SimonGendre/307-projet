@@ -6,13 +6,12 @@
 
 class VueCtrl {
   constructor() {
-    //definit tout les listener
-
     //permet de toggle le menu
     $("#siteName, #logo").click(function () {
       $("#menu").toggleClass("jqLeft", 500);
       $(".menuItem").toggleClass("hidden");
-      $("#view").toggleClass("fullScreen",500)
+      
+      $("#view").toggleClass("fullScreen", 500);
       return false;
     });
 

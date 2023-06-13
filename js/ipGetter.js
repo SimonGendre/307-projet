@@ -1,5 +1,6 @@
 /**
- * 
+ * cette classe gere les api concernant les IP 
+ * 13.06.23
  */
 class ipGetter {
   constructor() {}
@@ -19,7 +20,7 @@ class ipGetter {
     });
   }
   /**
-   * cette méthode permet de récuperer l'emplacement d'une Ip passée en paramètre
+   * cette méthode permet de récuperer l'emplacement (et d'autres infos) d'une Ip passée en paramètre
    */
   getLocalisation(ip, successCallback) {
     let url = "http://ip-api.com/json/" + ip;

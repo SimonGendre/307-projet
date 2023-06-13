@@ -25,7 +25,6 @@ class Ctrl {
    * cette méthode s'occupe de :
    * -recuperer et afficher l'IP du client et ses coordonnées
    * -ajouter les coordonnées à la liste de coordonnées en ligne
-   * -afficher les marqueur sur une carte
    */
   start() {
     this.ip = httpServ.getIP();
