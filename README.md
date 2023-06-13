@@ -7,12 +7,12 @@ Informations détaillées sur chaque adresse IP, telles que le pays, la ville, l
 
 ## Technologies Utilisées
 Frontend: HTML, CSS, JavaScript.
-Stockage des Données: Les données sont stockées sur https://json.extendsclass.com.
+Stockage des Données: Les données sont stockées sur https://extendsclass.com/json-storage.html.
 API de Géolocalisation: Utilisation des API suivantes :
 
-*getjsonip*: API pour obtenir l'IP du client connecté
+*getjsonip*: [API pour obtenir l'IP du client connecté ](https://jsonip.com/)
 
-*ip-api*: API pour obtenir les informations de géolocalisation d'une adresse IP
+*ip-api*: [API pour obtenir les informations de géolocalisation d'une adresse IP](https://ip-api.com/docs/api:json)
 
 ## Exécution
 Le site web ne nécessite pas de configuration spécifique. Vous pouvez simplement y acceder dans un navigateur web. http://307.gendres.emf-informatique.ch
@@ -20,6 +20,8 @@ Le site web ne nécessite pas de configuration spécifique. Vous pouvez simpleme
 
 ## Remarques
 Ce site web est développé à des fins éducatives et ne garantit pas l'exactitude à 100% des informations de géolocalisation des adresses IP. Veuillez utiliser les résultats avec précaution.
+
+Certaines options ne sont pas encore implémentées mais ne change en rien le fonctionnement du site. Pour plus d'information, veuillez lire [todo](./todo)
 
 N'hésitez pas à me contacter si vous avez des questions ou des suggestions pour améliorer ce site web.
 
