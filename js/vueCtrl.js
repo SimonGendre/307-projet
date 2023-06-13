@@ -7,18 +7,14 @@
 class VueCtrl {
   constructor() {
     //definit tout les listener
-    
-    //permet de toggle le menu
-    $("#siteName, #logo").click(function(){ 
-      $(".menuItem")
-      .slideToggle("slow")
-      .toggleClass("hidden");
-      $("#siteName").toggle(); 
-      
-      $("#menu").toggleClass('jqLeft');
-      return false; 
-    });
 
+    //permet de toggle le menu
+    $("#siteName, #logo").click(function () {
+      $("#menu").toggleClass("jqLeft", 500);
+      $(".menuItem").toggleClass("hidden");
+      $("#view").toggleClass("fullScreen",500)
+      return false;
+    });
 
     //menu
     $("#accueil").click(() => this.chargerVue("accueil"));
@@ -49,7 +45,6 @@ class VueCtrl {
           $("#lon").val(ctrl.lon);
           $("#lat").val(ctrl.lat);
           $("#ip").val(ctrl.ip);
-         
         }
       }
     });

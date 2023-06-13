@@ -1,24 +1,27 @@
+:root {
+  --main-bg-color: #7cafcb;
+  --main-font-color: #292929;
+  --main-accent-color: #298d20;
+  --secondary-accent-color:#d7ba66;
+  --secondary-bg-color: #ce8455;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #9cdcfe;
+  background-color: var(--main-bg-color);
   color: #5d5d5d;
   margin: 1cm;
   text-align: left;
 }
 
 a {
-  color: #2e9a24;
-}
-
-td {
-  margin: 0.5cm;
-  width: auto;
+  color: var(--main-accent-color);
 }
 
 button {
   border-radius: 5px;
-  border-color: #d7ba66 solid 2px;
-  background-color: #ce8455;
+  border-color: --secondary-accent-color solid 2px;
+  background-color: var(--secondary-bg-color);
 }
 
 #container {
@@ -32,27 +35,41 @@ button {
   display: flex;
   flex-direction: column;
 }
-
+/* CSS pour le menu */
 #menu {
-  border: solid 2px #5d5d5d;
+  border: solid 2px var(--main-font-color);
   border-radius: 90px;
+  background-color: var(--secondary-accent-color);
   font-size: 15pt;
   height: 5%;
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-height: 3.5em;
+  min-width: 3.5em;
+  
+}
+.menuItem {
+  margin: 0.5cm;
+  width: auto;
   
 }
 #logo {
-  max-height: 4em;
+  max-height: 3.5em;
   margin: auto;
   object-fit: scale-down;
-  clear: none;
-  float: right;
+  position: absolute;
+  right: 0px;
+  top: 0px
 }
-td:has(img#logo) {
+.menuItem:has(img#logo) {
   width: 100%;
 }
-#siteName {
-  width: 8%;
+
+.separateur {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 #texte {
   margin: 5%;
@@ -65,13 +82,14 @@ td:has(img#logo) {
 #carte {
   height: 60vh;
 }
-.separateur {
-  padding-left: 1em;
-  padding-right: 1em;
-}
+
 .important {
   color: red;
   margin-top: 2em;
+  background-color: var(--main-font-color);
+  border-radius: 10px;
+  padding: 2px;
+  width: max-content;
 }
 .bottomLeft {
   margin: auto;
@@ -83,10 +101,14 @@ td:has(img#logo) {
 .ombre {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* classes utilisées par JQ */
 .hidden {
-    display: none;
+  display: none;
 }
 .jqLeft {
-    width: 5%;
-    border: solid 2px #9cdcfe;
+  width: 5%;
+  border: solid 2px #9cdcfe;
+}
+.fullScreen {
+  height: 110%;
 }

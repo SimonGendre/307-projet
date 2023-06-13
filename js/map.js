@@ -1,6 +1,10 @@
 class MapCtrl {
   mymap = "";
   constructor() {}
+  /**
+   * cette méthode affiche la carte
+   * @param {*} mapElement l'element contenant la map ($("#carte")) 
+   */
   afficherCarte(mapElement) {
     // Utilisez l'élément "map" pour afficher la carte Leaflet ou effectuer d'autres opérations
     this.mymap = L.map(mapElement[0]).setView([46.802, 7.146], 13);
