@@ -3,7 +3,7 @@
  * 13.06.23
  */
 class HttpServ {
-  constructor() { }
+  constructor() {}
   /**
    * cette méthode permet de récuperer l'ip du visiteur et de l'afficher
    */
@@ -42,17 +42,21 @@ class HttpServ {
    * ,MMJJHHmm : {lon : XXX, lat : YYY}
    */
   addData(lon, lat, ip) {
-    //creation de la ligne à ajouté
-    let date = new Date();
-    //enleve les : de l'ipv6 
+    //enleve les : de l'ipv6
     let ipFormat = ip.replaceAll(":", ".");
     let value = "lon:" + lon + ", lat:" + lat;
+    if (
+      lon != undefined &&
+      lat != undefined &&
+      lon != "undefined" &&
+      lat != "undefined"
+    ) {
+      //ajout de la ligne
+      let data = this.getStoredData();
+      data[ipFormat] = value;
 
-    //ajout de la ligne
-    let data = this.getStoredData();
-    data[ipFormat] = value;
-
-    //ecriture en ligne
-    rmtData.setJson(JSON.stringify(data), () => { });
+      //ecriture en ligne
+      rmtData.setJson(JSON.stringify(data), () => {});
+    }
   }
 }

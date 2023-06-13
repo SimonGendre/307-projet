@@ -1,5 +1,5 @@
 /**
- * cette classe gere la carte 
+ * cette classe gere la carte
  * 13.06.23
  */
 class MapCtrl {
@@ -7,7 +7,7 @@ class MapCtrl {
   constructor() {}
   /**
    * cette méthode affiche la carte
-   * @param {*} mapElement l'element contenant la map ($("#carte")) 
+   * @param {*} mapElement l'element contenant la map ($("#carte"))
    */
   afficherCarte(mapElement) {
     // Utilisez l'élément "map" pour afficher la carte Leaflet ou effectuer d'autres opérations
@@ -26,13 +26,20 @@ class MapCtrl {
    * @param {*} color couleur du marqueur (pas encore implémenté)
    */
   addMarker(lon, lat, label, color) {
-    // Ajouter un marqueur simple
-    let marker = L.marker([lon, lat]).addTo(this.mymap);
+    if (
+      lon != undefined &&
+      lat != undefined &&
+      lon != "undefined" &&
+      lat != "undefined"
+    ) {
+      // Ajouter un marqueur simple
+      let marker = L.marker([lon, lat]).addTo(this.mymap);
 
-    // centre la carte sur le point ajouté
-    this.mymap.setView([lon, lat], 10);
-    // Ajouter une info-bulle au marqueur
-    marker.bindPopup(label, { offset: [0, -30] }).openPopup();
+      // centre la carte sur le point ajouté
+      this.mymap.setView([lon, lat], 10);
+      // Ajouter une info-bulle au marqueur
+      marker.bindPopup(label, { offset: [0, -30] }).openPopup();
+    }
   }
   /**
    * cette fonction ajoute un marqueur pour tout les points du json passé en parametre
@@ -48,14 +55,7 @@ class MapCtrl {
         let lat = coordonnees[k].split(",")[1].split(":")[1];
         let ip = k;
 
-        if (
-          lon != undefined &&
-          lat != undefined &&
-          lon != "undefined" &&
-          lat != "undefined"
-        ) {
-          mapCtrl.addMarker(lon, lat, ip, "green");
-        }
+        mapCtrl.addMarker(lon, lat, ip, "green");
       }
     });
   }
