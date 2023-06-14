@@ -4,3 +4,4 @@
 
 -utiliser uniquement http://ip-api.com/json/ pour avoir IPv4
 -changer couleur du texte (plus foncé)
+-afficher pop-up quand la recherche d'ip ne retourne rien
