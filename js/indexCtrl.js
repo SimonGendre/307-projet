@@ -19,7 +19,7 @@ class Ctrl {
   ip = null;
   lon = null;
   lat = null;
-  constructor() {}
+  constructor() { }
 
   /**
    * cette méthode s'occupe de :
@@ -37,7 +37,16 @@ class Ctrl {
     let coordonnees = httpServ.getLocalisation(ip);
     let lat = coordonnees.split(",")[0];
     let lon = coordonnees.split(",")[1];
-    vue.afficheIP(ip, lon, lat);
-    httpServ.addData(lon, lat, ip);
+    if (
+      lon != undefined &&
+      lat != undefined &&
+      lon != "undefined" &&
+      lat != "undefined"
+    ) {
+      vue.afficheIP(ip, lon, lat);
+      httpServ.addData(lon, lat, ip);
+    } else {
+      window.alert("Impossible de trouver l'emplacement de l'IP !");
+    }
   }
 }
