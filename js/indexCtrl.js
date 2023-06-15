@@ -44,7 +44,8 @@ class Ctrl {
       lat != "undefined"
     ) {
       vue.afficheIP(ip, lon, lat);
-      httpServ.addData(lon, lat, ip);
+      //enlever le commentaire pour que les recherches soient enregistrées dans l'API de stockage
+      //httpServ.addData(lon, lat, ip);
     } else {
       window.alert("Impossible de trouver l'emplacement de l'IP !");
     }
